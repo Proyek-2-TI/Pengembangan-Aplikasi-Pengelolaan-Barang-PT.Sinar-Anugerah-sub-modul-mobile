@@ -93,3 +93,7 @@ Tahap menterjemahkan data atau pemecahan masalah yang telah dirancang kedalam Ba
 Tahap pengujian terhadap aplikasi yang telah dibangun.<br>
 6.	Perawatan<br>
 Tahap akhir dimana suatu aplikasi yang sudah selesai dapat mengambil perubahan-perubahan atau penambahan sesuai dengan permintaan pengguna.<br>
+
+<p align="center">
+  <img src="https://github.com/Proyek-2-TI/Pengembangan-Sistem-Informasi-Pengelolaan-Barang-PT.Sinar-Anugerah/blob/master/img/proposal/waterfall.JPG" width="200px" height="200">
+</p>
