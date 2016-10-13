@@ -3,7 +3,7 @@
 # Pengembangan Sistem Informasi Pengelolaan Barang PT.Sinar Anugerah 
 
 <p align="center">
-  <img src="/img/Poltekpos_Logo.jpg" width="400px">
+  <img src="/img/proposal/Poltekpos_Logo.jpg" width="400px">
 </p>
 
 ## System Requirement
