@@ -20,3 +20,14 @@ Berdasarkan latar belakang diatas, maka dapat disimpulkan perumusan masalah yait
 2.	Belum ada chart yang mempermudah user untuk memantau keuntungan dan kerugian pada proses transaksi dalam jangka waktu yang ditentukan.<br>
 3.	Lemah dalam segi keamanan sehingga memungkinkan presentase peretasan konten dan data pada aplikasi pengelolaan dan transaksi barang PT.Sinar Anugerah besar.<br>
 
+## 1.3	Tujuan
+Berdasarkan rumusan masalah diatas, maka tujuan dari pembuatan aplikasi ini yaitu: <br>
+1.	Meningkatkan sistem yang ada pada aplikasi pengelolaan dan transaksi barang PT.Sinar Anugerah agar dapat menunjang aktifitas pergudangan .<br>
+2.	Mempermudah user untuk memantau keuntungan dan kerugian pada proses transaksi dalam jangka waktu yang ditentukan.<br>
+3.	Meningkatkan keamanan aplikasi agar meminimalisir kejadian peretasan pada konten dan data.<br>
+
+## 1.4	Ruang Lingkup
+Agar penelitian berjalan dengan baik dan terarah, maka harus ada batasan masalah dalam ruang lingkup penelitian. Adapun pembatasan masalah penelitian ini yaitu:
+1.	Pengembangan aplikasi ini menggunakan PHP sebagai bahasa pemprogamannya disertai dengan OAuth2 sebagai penunjangnya dan Mysql Sebagai DBMS, serta windows sebagai sistem operasinya.
+2.	Aplikasi hanya dikelola oleh seorang administrator, pegawai sales, dan pegawai gudang dari pihak pengelola yang mempunyai hak akses penuh dalam pengelolaan data, sedangkan konsumen atau para pengunjung tidak disediakan layanan dalam aplikasi ini. 
+3.	Untuk aktivitas pada pihak supplier maupun konsumen tidak dikaitkan pada aplikasi ini dikarenakan data dan aktivitas yang diambil pada supplier dan konsumen hanya berubah data nya saja kemudian dijadikan sumber acuan pada sistem.
