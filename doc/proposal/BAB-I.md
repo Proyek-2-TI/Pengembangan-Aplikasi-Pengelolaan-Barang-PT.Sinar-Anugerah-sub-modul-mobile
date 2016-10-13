@@ -1,8 +1,8 @@
-##BAB I
+# BAB I
 
-##PENDAHULUAN
+# PENDAHULUAN
 
-#1.1	Latar Belakang
+## 1.1	Latar Belakang
 
 PT Sinar Anugerah merupakan salah satu dari sekian perusahaan yang menjalankan bisnis pendistribusian barang. Perusahaan yang berdiri sejak tahun 2004 ini masih melakukan sistem pendataan tanpa menggunakan sistem aplikasi. Misalnya semua pendataan barang masuk dan keluar serta return barang masih menggunakan blueprint.<br>
 
