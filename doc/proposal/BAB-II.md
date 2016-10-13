@@ -95,5 +95,5 @@ Tahap pengujian terhadap aplikasi yang telah dibangun.<br>
 Tahap akhir dimana suatu aplikasi yang sudah selesai dapat mengambil perubahan-perubahan atau penambahan sesuai dengan permintaan pengguna.<br>
 
 <p align="center">
-  <img src="https://github.com/Proyek-2-TI/Pengembangan-Sistem-Informasi-Pengelolaan-Barang-PT.Sinar-Anugerah/blob/master/img/proposal/waterfall.JPG" width="200px" height="200">
+  <img src="https://github.com/Proyek-2-TI/Pengembangan-Sistem-Informasi-Pengelolaan-Barang-PT.Sinar-Anugerah/blob/master/img/proposal/waterfall.jpg" width="200px" height="200">
 </p>
