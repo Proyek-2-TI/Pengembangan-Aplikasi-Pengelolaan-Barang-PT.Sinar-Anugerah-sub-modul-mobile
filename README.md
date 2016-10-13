@@ -3,7 +3,7 @@
 # Pengembangan Sistem Informasi Pengelolaan Barang PT.Sinar Anugerah 
 
 <p align="center">
-  <img src="../img/proposal/Poltekpos_Logo.jpg" width="400px">
+  <img src="https://github.com/Proyek-2-TI/Pengembangan-Sistem-Informasi-Pengelolaan-Barang-PT.Sinar-Anugerah/blob/master/img/proposal/Poltekpos_Logo.JPG" width="400px" height="400">
 </p>
 
 ## System Requirement
