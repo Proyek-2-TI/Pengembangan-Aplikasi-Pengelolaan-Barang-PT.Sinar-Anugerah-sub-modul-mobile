@@ -27,7 +27,16 @@ Berdasarkan rumusan masalah diatas, maka tujuan dari pembuatan aplikasi ini yait
 3.	Meningkatkan keamanan aplikasi agar meminimalisir kejadian peretasan pada konten dan data.<br>
 
 ## 1.4	Ruang Lingkup
-Agar penelitian berjalan dengan baik dan terarah, maka harus ada batasan masalah dalam ruang lingkup penelitian. Adapun pembatasan masalah penelitian ini yaitu:
-1.	Pengembangan aplikasi ini menggunakan PHP sebagai bahasa pemprogamannya disertai dengan OAuth2 sebagai penunjangnya dan Mysql Sebagai DBMS, serta windows sebagai sistem operasinya.
-2.	Aplikasi hanya dikelola oleh seorang administrator, pegawai sales, dan pegawai gudang dari pihak pengelola yang mempunyai hak akses penuh dalam pengelolaan data, sedangkan konsumen atau para pengunjung tidak disediakan layanan dalam aplikasi ini. 
-3.	Untuk aktivitas pada pihak supplier maupun konsumen tidak dikaitkan pada aplikasi ini dikarenakan data dan aktivitas yang diambil pada supplier dan konsumen hanya berubah data nya saja kemudian dijadikan sumber acuan pada sistem.
+Agar penelitian berjalan dengan baik dan terarah, maka harus ada batasan masalah dalam ruang lingkup penelitian. Adapun pembatasan masalah penelitian ini yaitu: <br>
+1.	Pengembangan aplikasi ini menggunakan PHP sebagai bahasa pemprogamannya disertai dengan OAuth2 sebagai penunjangnya dan Mysql Sebagai DBMS, serta windows sebagai sistem operasinya.<br>
+2.	Aplikasi hanya dikelola oleh seorang administrator, pegawai sales, dan pegawai gudang dari pihak pengelola yang mempunyai hak akses penuh dalam pengelolaan data, sedangkan konsumen atau para pengunjung tidak disediakan layanan dalam aplikasi ini. <br>
+3.	Untuk aktivitas pada pihak supplier maupun konsumen tidak dikaitkan pada aplikasi ini dikarenakan data dan aktivitas yang diambil pada supplier dan konsumen hanya berubah data nya saja kemudian dijadikan sumber acuan pada sistem.<br>
+
+## 1.5	Sistematika Penulisan
+Laporan proyek II yang berjudul “Pengembangan Aplikasi Pengelolaan Dan Transaksi Barang PT.Sinar Anugerah Berbasis Framework Codeigniter Sub Modul Pergudangan” ini terdiri dari  5 bab yaitu :<br>
+Bab I Pendahuluan berisikan tentang Sistem aplikasi yang dibangun untuk PT Sinar Anugerah masih belum dapat menunjang proses bisnis pada PT, Sinar Anugerah.<br>
+Bab II Landasan Teori berisikan tentang teori dan referensi yang berkaitan dengan  pengelolaan barang. Selain itu, BAB II ini berisikan tentang teori-teori seperti bahasa pemrograman PHP, OAuth2, MySQL, Database, Context Diagram, Data Flow Diagram, HTML, Sublime, dan Software yang akan menunjang dalam perancangan dan pembuatan aplikasi pengelolaan barang berbasis web ini.<br>
+Bab III Analisis dan Perancangan berisikan tentang analisis sistem yang sedang berjalan saat ini menggunakan flow map, metode alirnya menggunakan Unfied Modeling Language (UML) yang terdiri dari Use Case, Class Diagram, Sequence Diagram, Communication Diagram, Activity Diagram, Statechart, Deployment Diagram, Component Diagram, dan Object Diagram. Perancangan sistem yang akan dibangun mengacu pada sistem yang saat ini sedang berjalan, sehingga sesuai dengan karakteristik sistem manual yang sudah ada dan tentunya tidak mengubah fungsi-fungsi sistem yang sudah berjalan di suatu perusahaan.<br>
+Bab IV Pada bab ini berisi implementasi sistem yang menjelaskan tentang implementasi hasil dari analisis dan perancangan sistem ke dalam bentuk Bahasa pemograman, serta kebutuhan dalam mengembangkan sistem. Selain itu, akan membahas tentang pengujian aplikasi yang dibuat.<br>
+Bab V berisikan kesimpulan tercapai atau tidaknya tujuan dibuat aplikasi pengelolaan barang PT Sinar Anugerah  berbasis web ini serta saran untuk membangun aplikasi ini menjadi lebih baik.<br>
+
