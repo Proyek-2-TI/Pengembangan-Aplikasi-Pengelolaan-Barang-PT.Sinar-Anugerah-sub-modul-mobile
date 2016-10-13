@@ -12,3 +12,11 @@ Pada pembangunan aplikasi proyek I yang telah diselesaikan, aplikasi yang mengel
 
 Dalam segi keamanan, aplikasi ini hanya menggunakan session untuk dapat masuk dan mengakses konten yang ada pada aplikasi ini. Sehingga memungkinkan pihak yang tidak berkaitan dengan PT. Sinar Anugerah dapat dengan mudah mengakses konten yang ada pada aplikasi ini. 
 Dalam hal ini, kami berusaha mengembangkan sebuah sistem yang telah dibangun sebelumnya dengan menggunakan bahasa pemograman web yaitu PHP berbasis framework Codeigniter disertai dengan OAuth2 sebagai penunjang aplikasi dan untuk integrasi datanya akan dibangun sebuah wadah penyimpanan berupa database dengan menggunakan Mysql. Adapun proyek ini saya beri judul “Pengembangan Aplikasi Pengelolaan Dan Transaksi Barang PT.Sinar Anugerah Berbasis Framework Codeigniter Sub Modul Pergudangan”.<br>
+
+## 1.2	Identifikasi Masalah
+
+Berdasarkan latar belakang diatas, maka dapat disimpulkan perumusan masalah yaitu: <br>
+1.	Sistem yang ada pada pengelolaan data barang di gudang belum sepenuhnya menunjang aktifitas pergudangan pada PT. Sinar Anugerah.<br>
+2.	Belum ada chart yang mempermudah user untuk memantau keuntungan dan kerugian pada proses transaksi dalam jangka waktu yang ditentukan.<br>
+3.	Lemah dalam segi keamanan sehingga memungkinkan presentase peretasan konten dan data pada aplikasi pengelolaan dan transaksi barang PT.Sinar Anugerah besar.<br>
+
