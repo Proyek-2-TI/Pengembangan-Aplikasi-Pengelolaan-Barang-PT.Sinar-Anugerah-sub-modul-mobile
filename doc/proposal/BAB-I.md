@@ -45,3 +45,8 @@ Bab III Analisis dan Perancangan berisikan tentang analisis sistem yang sedang b
 Bab IV Pada bab ini berisi implementasi sistem yang menjelaskan tentang implementasi hasil dari analisis dan perancangan sistem ke dalam bentuk Bahasa pemograman, serta kebutuhan dalam mengembangkan sistem. Selain itu, akan membahas tentang pengujian aplikasi yang dibuat.
 Bab V berisikan kesimpulan tercapai atau tidaknya tujuan dibuat aplikasi pengelolaan barang PT Sinar Anugerah  berbasis web ini serta saran untuk membangun aplikasi ini menjadi lebih baik.<br>
 
+## 1.6	Jadwal Kegiatan Pengerjaan Proyek
+
+<p align="center">
+  <img src="https://github.com/Proyek-2-TI/Pengembangan-Sistem-Informasi-Pengelolaan-Barang-PT.Sinar-Anugerah/blob/master/img/proposal/jadwal_kegiatan.jpg"  height="300">
+</p>
