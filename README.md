@@ -1,6 +1,6 @@
 # Proyek2
 
-# Pengembangan Sistem Informasi Pengelolaan Barang PT.Sinar Anugerah 
+# Pengembangan Aplikasi Pengelolaan Barang PT.Sinar Anugerah Sub Modul Pergudangan
 
 <p align="center">
   <img src="https://github.com/Proyek-2-TI/Pengembangan-Sistem-Informasi-Pengelolaan-Barang-PT.Sinar-Anugerah/blob/master/img/proposal/Poltekpos_Logo.JPG" width="400px" height="400">
