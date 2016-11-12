@@ -19,40 +19,26 @@ class Supplier_Controller extends CI_Controller{
         $this->load->view('elements/v_footer');
     }
 
-
-    function tambah_customer(){
-
-        $this->Customer_model->insertCustomer();
-        redirect("Customer_Controller");
-    }
-
-    function edit_data_customer(){
+    function edit_data_supplier(){
         $id= $this->uri->segment(3);
         $data=array(
-            'title'=>'Edit Data Customer',
-            'dt_customer'=>$this->Customer_model->getIdCustomer($id),
+            'title'=>'Edit Data Supplier',
+            'dt_supplier'=>$this->Supplier_model->getIdSupplier($id),
         );
         $this->load->view('elements/v_header',$data);
-        $this->load->view('pages/admin/v_edit_customer');
+        $this->load->view('pages/admin/v_edit_supplier');
         $this->load->view('elements/v_footer');
     }
 
-    function edit_customer(){
-        $id['ID_CUSTOMER'] = $this->input->post('id_customer');
+    function edit_supplier(){
+        $id['ID_SUPPLIER'] = $this->input->post('id_supplier');
         $data=array(
-            'NM_CUSTOMER'=>$this->input->post('nm_customer'),
-            'ALMT_CUSTOMER'=>$this->input->post('almt_customer'),
-            'EMAIL_CUSTOMER'=>$this->input->post('email_customer'),
+            'NM_SUPPLIER'=>$this->input->post('nm_supplier'),
+            'ALMT_SUPPLIER'=>$this->input->post('almt_supplier'),
+            'EMAIL_SUPPLIER'=>$this->input->post('email_supplier'),
         );
-        $this->Global_model->updateData('TBL_CUSTOMER',$data,$id);
-        redirect("Customer_Controller");
-    }
-
-
-    function hapus_customer(){
-        $id['ID_CUSTOMER'] = $this->uri->segment(3);
-        $this->Global_model->deleteData('TBL_CUSTOMER',$id);
-        redirect("Customer_Controller");
+        $this->Global_model->updateData('TBL_SUPPLIER',$data,$id);
+        redirect("Supplier_Controller");
     }
 
 }
