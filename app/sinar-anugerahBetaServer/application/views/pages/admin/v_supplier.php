@@ -24,7 +24,7 @@
                                         <th>Alamat</th>
                                         <th>Email</th>
                                         <th>
-                                            <a data-target="#modalAddPelanggan"type="button" class="btn btn-outline btn-info" data-toggle="modal">
+                                            <a data-target="#modalAddSupplier"type="button" class="btn btn-outline btn-info" data-toggle="modal">
                                                 <i class="fa fa-plus fa-fw"></i> Tambah Data
                                             </a>
                                         </th>
@@ -58,38 +58,38 @@
                                 </tbody>
                             </table>
 
-<!-- ============ MODAL ADD PELANGGAN =============== -->
- <div class="modal fade" id="modalAddPelanggan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- ============ MODAL ADD SUPPLIER =============== -->
+ <div class="modal fade" id="modalAddSupplier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
              <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Tambah Konsumen</h4>
+                <h4 class="modal-title" id="myModalLabel">Tambah Supplier</h4>
             </div>
-            <form class="form-horizontal" method="post" action="<?php echo site_url('Customer_controller/tambah_customer')?>">
+            <form class="form-horizontal" method="post" action="<?php echo site_url('Supplier_controller/tambah_supplier')?>">
             <div class="modal-body">
                 <div class="control-group">
-                <label class="control-label">ID Customer</label>
+                <label class="control-label">ID Supplier</label>
                     <div class="controls">
-                    <input class="form-control" name="id_customer" type="text" value="<?php echo $ID_CUSTOMER; ?>" readonly>
+                    <input class="form-control" name="id_supplier" type="text" value="<?php echo $ID_SUPPLIER; ?>" readonly>
                     </div>
                 </div>
                 <div class="control-group">
-                <label class="control-label" >Nama Customer</label>
+                <label class="control-label" >Nama Supplier</label>
                     <div class="controls">
-                    <input class="form-control" name="nm_customer" type="text" placeholder="Input Nama Customer.."required>
+                    <input class="form-control" name="nm_supplier" type="text" placeholder="Input Nama Supplier.." required>
                     </div>
                 </div>
                 <div class="control-group">
-                <label class="control-label"> Alamat </label>
+                <label class="control-label"> Alamat Supplier </label>
                     <div class="controls">
-                    <input class="form-control" name="almt_customer" type="text" placeholder="Input Alamat..."required>
+                    <input class="form-control" name="almt_supplier" type="text" placeholder="Input Alamat..." required>
                     </div>
                 </div>
                 <div class="control-group">
-                <label class="control-label">Email</label>
+                <label class="control-label">Email Supplier</label>
                     <div class="controls">
-                    <input class="form-control" name="email_customer" type="text" placeholder="Input Email..."required>
+                    <input class="form-control" name="email_supplier" type="text" placeholder="Input Email..." required>
                 </div>
             </div>
             <div class="modal-footer">

@@ -11,12 +11,18 @@ class Supplier_Controller extends CI_Controller{
     function index(){
         $data=array(
             'title'=>'Data Supplier',
-            //'ID_SUPPLIER'=>$this->Supplier_model->getKodeSupplier(),
+            'ID_SUPPLIER'=>$this->Supplier_model->getKodeSupplier(),
             'data_supplier'=>$this->Global_model->getAllData('TBL_SUPPLIER'),
         );
         $this->load->view('elements/v_header',$data);
         $this->load->view('pages/admin/v_supplier');
         $this->load->view('elements/v_footer');
+    }
+
+    function tambah_supplier(){
+
+        $this->Supplier_model->insertSupplier();
+        redirect("Supplier_Controller");
     }
 
     function edit_data_supplier(){
