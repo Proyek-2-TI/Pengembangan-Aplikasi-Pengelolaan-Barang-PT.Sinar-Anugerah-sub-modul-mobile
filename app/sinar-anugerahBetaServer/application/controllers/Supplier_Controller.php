@@ -47,4 +47,10 @@ class Supplier_Controller extends CI_Controller{
         redirect("Supplier_Controller");
     }
 
+    function hapus_supplier(){
+        $id['ID_SUPPLIER'] = $this->uri->segment(3);
+        $this->Global_model->deleteData('TBL_SUPPLIER',$id);
+        redirect("Supplier_Controller");
+    }
+
 }
