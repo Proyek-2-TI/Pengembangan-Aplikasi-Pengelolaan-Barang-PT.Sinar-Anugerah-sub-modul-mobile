@@ -43,7 +43,7 @@
                                 <button  type="submit" class="btn btn-outline btn-primary">
                                     <i class="fa fa-save fa-fw"></i> Simpan
                                 </button>
-                                <a href="<?php echo site_url('Customer_controller')?>" type="button" class="btn btn-outline btn-warning">
+                                <a href="<?php echo site_url('Supplier_controller')?>" type="button" class="btn btn-outline btn-warning">
                                     <i class="fa fa-mail-reply-all fa-fw"></i> Cancel
                                 </a>
                                 </form>
