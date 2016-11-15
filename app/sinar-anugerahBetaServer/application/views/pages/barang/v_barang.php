@@ -27,7 +27,7 @@
                                         <th>Jenis Barang</th>
                                         <th>Supplier</th>
                                         <th>
-                                            <a data-target="#modalAddPelanggan"type="button" class="btn btn-outline btn-info" data-toggle="modal">
+                                            <a data-target="#modalAddBarang"type="button" class="btn btn-outline btn-info" data-toggle="modal">
                                                 <i class="fa fa-plus fa-fw"></i> Tambah Data
                                             </a>
                                         </th>
@@ -63,3 +63,82 @@
 
                                 </tbody>
                             </table>
+ <div class="modal fade" id="modalAddBarang" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+             <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Tambah Barang</h4>
+            </div>
+            <center>
+            <form id="defaultForm" class="form-horizontal" method="post" action="<?php echo site_url('Barang_controller/tambah_barang')?>">
+            <input type="hidden" name="rusak_barang" value="0" readonly>
+            <div class="modal-body">
+                <div class="form-group">
+                <label class="col-lg-4 control-label">Kode Barang</label>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" name="id_barang" value="<?php echo $ID_BARANG;?>" readonly/>
+                    </div>
+                 </div>
+                <div class="form-group">
+                <label class="col-lg-4 control-label">Nama Barang</label>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" name="nm_barang" placeholder="Input nama barang . ." />
+                    </div>
+                 </div>
+                <div class="form-group">
+                <label class="col-lg-4 control-label">Jenis Barang</label>
+                    <div class="col-lg-6">
+                        <select id="id_jenis_barang" tabindex="5" class="form-control" name="id_jenis_barang" data-placeholder="Pilih Jenis Barang">
+                            <option value=""></option>
+                            <?php
+                            if(isset($data_jenis_barang)){
+                                foreach($data_jenis_barang as $row){
+                                    ?>
+                                <option value="<?php echo $row->ID_JENIS_BARANG?>"><?php echo $row->JENIS_BARANG?></option>
+                            <?php
+                                    }
+                                }
+                            ?>
+                        </select>
+                    </div>
+                 </div>
+                <div class="form-group">
+                <label class="col-lg-4 control-label">Supplier</label>
+                    <div class="col-lg-6">
+                        <select id="ID_SUPPLIER" tabindex="5" class="form-control" name="id_supplier" data-placeholder="Pilih Supplier">
+                            <option value=""></option>
+                            <?php
+                            if(isset($data_supplier)){
+                                foreach($data_supplier as $row){
+                                    ?>
+                                <option value="<?php echo $row->ID_SUPPLIER?>"><?php echo $row->NM_SUPPLIER?></option>
+                            <?php
+                                    }
+                                }
+                            ?>
+                        </select>
+                    </div>
+                 </div>
+                <div class="form-group">
+                <label class="col-lg-4 control-label">Stok</label>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" name="stok_barang" placeholder="Input stok barang . ."/>
+                    </div>
+                 </div>
+                <div class="form-group">
+                <label class="col-lg-4 control-label">Harga</label>
+                <div class="col-lg-6">
+                        <input type="text" class="form-control" name="harga_barang" placeholder="Input harga barang . ." />
+                    </div>
+                </div>
+                <button type="button" data-dismiss="modal" class="btn btn-outline btn-warning"><i class="fa fa-mail-reply-all fa-fw"></i>Close</button>
+                <button type="submit" class="btn btn-outline btn-primary"><i class="fa fa-save fa-fw"></i>Simpan</button>
+            </div>
+            </center>
+            <div class="modal-footer">
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
