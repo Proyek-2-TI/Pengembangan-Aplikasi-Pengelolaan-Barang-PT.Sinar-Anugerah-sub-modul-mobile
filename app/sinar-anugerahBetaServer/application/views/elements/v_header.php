@@ -104,7 +104,7 @@
                             <a href="<?php echo site_url('Supplier_controller')?>"><i class="fa fa-group fa-fw"></i> Data Supplier</a>
                         </li>
                          <li>
-                            <a href="<?php echo site_url('master/barang_data')?>"><i class="fa fa-desktop fa-fw"></i> Data Barang</a>                            
+                            <a href="<?php echo site_url('Barang_controller')?>"><i class="fa fa-desktop fa-fw"></i> Data Barang</a>                            
                         </li>
                          <li>
                             <a href="<?php echo site_url('Customer_controller')?>"><i class="fa fa-money fa-fw"></i> Data Customer</a>

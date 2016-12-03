@@ -33,6 +33,7 @@ class Barang_model extends CI_Model{
         }
         return "br".$ID;
     }
+
     public function insertBarang()
     {
         $id_barang    = $this->input->post('id_barang');
@@ -54,5 +55,16 @@ class Barang_model extends CI_Model{
 
         $this->db->insert('TBL_BARANG',$data);
     }
+
+    function getIdBarang($id){
+        return $this->db->query("
+            SELECT *
+            FROM ALDY.TBL_BARANG 
+            INNER JOIN ALDY.TBL_JENIS_BARANG ON TBL_BARANG.ID_JENIS_BARANG = TBL_JENIS_BARANG.ID_JENIS_BARANG
+            INNER JOIN ALDY.TBL_SUPPLIER ON TBL_BARANG.ID_SUPPLIER = TBL_SUPPLIER.ID_SUPPLIER
+            where ID_BARANG = '$id'
+            ")->result();
+    }
+
 
 }
