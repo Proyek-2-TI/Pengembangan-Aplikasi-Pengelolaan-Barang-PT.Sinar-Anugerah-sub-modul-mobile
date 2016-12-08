@@ -10,12 +10,16 @@ class Dashboard_Controller extends CI_Controller{
 
     function index(){
         $data=array(
-            'title'=>'Dashboard',
-            'active_dashboard'=>'active',
-            //'dt_pegawai'=>$this->model_app->getAllData('tbl_pegawai'),
-            'dt_contact'=>$this->Global_model->getAllData('TBL_CONTACT'),
+            'title'=>'Dahboard Admin',
+            'headerPage'=>'Dashboard',
+            'headerPanel'=>'Kelola Data',
+
+            'ID_BARANG'=>$this->Barang_model->getKodeBarang(),
+            'data_barang'=>$this->Barang_model->getAllDataBarang(),
+            'data_jenis_barang'=>$this->Global_model->getAllData('TBL_JENIS_BARANG'),
+            'data_supplier'=>$this->Global_model->getAllData('TBL_SUPPLIER'),
         );
-        $this->load->view('elements/v_header',$data);
+        $this->load->view('elements/v_header', $data);
         $this->load->view('pages/v_dashboard');
         $this->load->view('elements/v_footer');
     }

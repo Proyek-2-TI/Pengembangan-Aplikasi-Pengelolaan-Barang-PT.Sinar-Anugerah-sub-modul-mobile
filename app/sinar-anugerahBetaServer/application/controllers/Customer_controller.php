@@ -15,7 +15,7 @@ class Customer_Controller extends CI_Controller{
             'data_customer'=>$this->Global_model->getAllData('TBL_CUSTOMER'),
         );
         $this->load->view('elements/v_header',$data);
-        $this->load->view('pages/admin/v_customer');
+        $this->load->view('pages/customer/v_customer');
         $this->load->view('elements/v_footer');
     }
 
@@ -33,7 +33,7 @@ class Customer_Controller extends CI_Controller{
             'dt_customer'=>$this->Customer_model->getIdCustomer($id),
         );
         $this->load->view('elements/v_header',$data);
-        $this->load->view('pages/admin/v_edit_customer');
+        $this->load->view('pages/customer/v_edit_customer');
         $this->load->view('elements/v_footer');
     }
 

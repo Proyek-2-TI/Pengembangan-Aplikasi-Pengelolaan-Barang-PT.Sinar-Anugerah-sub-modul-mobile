@@ -8,7 +8,8 @@ class Login_Controller extends CI_Controller {
         $data=array(
             'title'=>'Login Page'
         );
-        $this->load->view('pages/v_login',$data);
+        $this->load->view('elements/v_header',$data);
+        $this->load->view('pages/v_login');
 	}
 
     function cek_login() {

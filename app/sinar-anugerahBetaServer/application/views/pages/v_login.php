@@ -1,79 +1,59 @@
-<html lang="en">
-<head>
-    <title><?php echo $title?></title>
+    <!-- PAGE LEVEL LOGIN STYLES -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/adminTemplates/plugins/bootstrap/css/bootstrap.css')?>" />
+    <link rel="stylesheet" href="<?php echo base_url('assets/adminTemplates/css/login.css')?>" />
+    <link rel="stylesheet" href="<?php echo base_url('assets/adminTemplates/plugins/magic/magic.css')?>" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('asset/css/bootstrap.css')?>"/>
-    <link rel="stylesheet" href="<?php echo base_url('asset/css/bootstrap-responsive.css')?>"/>
-    <link rel="stylesheet" href="<?php echo base_url('asset/css/style.css')?>"/>
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500"/>
-        <link rel="stylesheet" href="<?php echo base_url('asset/new/bootstrap/css/bootstrap.min.css')?>"/>
-        <link rel="stylesheet" href="<?php echo base_url('asset/new/font-awesome/css/font-awesome.min.css')?>"/>
-        <link rel="stylesheet" href="<?php echo base_url('asset/new/css/form-elements.css')?>"/>
-        <link rel="stylesheet" href="<?php echo base_url('asset/new/css/style.css')?>">
-        <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-
-    </head>
-
-    <body>
-
-        <!-- Top content -->
-        <div class="top-content">
-            
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1><strong>PT Sinar Anugerah</strong></h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 form-box">
-                                <?php
-                                $message = $this->session->flashdata('notif');
-                                if($message){
-                                echo '<p class="alert alert-danger text-center">'.$message .'</p>';
-                                 }?>
-                            <div class="form-top">
-                                <div class="form-top-left">
-                                    <h3>Login </h3>
-                                    <p>Masukan Username dan Password:</p>
-                                </div>
-                                <div class="form-top-right">
-                                    <i class="fa fa-lock"></i>
-                                </div>
-                            </div>
-                            <div class="form-bottom">
-                                <form role="form" action="<?= site_url('Login_Controller/cek_login')?>" method="post" class="login-form">
-                                    <div class="form-group">
-                                        <label class="sr-only" for="form-username">Username</label>
-                                        <input type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="form-password">Password</label>
-                                        <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
-                                    </div>
-                                    <button type="submit" class="btn">Masuk</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+<body >
+    <div class="container">
+    <div class="text-center">
+        <img src="assets/img/logo.png" id="logoimg" alt=" Logo" />
+    </div>
+    <div class="tab-content">
+        <div id="login" class="tab-pane active">
+            <form action="<?= site_url('Login_Controller/cek_login')?>" method="post" class="form-signin">
+                <p class="text-muted text-center btn-block btn btn-primary btn-rect">
+                    Enter your username and password
+                </p>
+                <input name="username" type="text" placeholder="Username" class="form-control" />
+                <input name="password" type="password" placeholder="Password" class="form-control" />
+                <button class="btn text-muted text-center btn-danger" type="submit">Sign in</button>
+            </form>
         </div>
-        
-        <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
+        <div id="forgot" class="tab-pane">
+            <form action="index.html" class="form-signin">
+                <p class="text-muted text-center btn-block btn btn-primary btn-rect">Enter your valid e-mail</p>
+                <input type="email"  required="required" placeholder="Your E-mail"  class="form-control" />
+                <br />
+                <button class="btn text-muted text-center btn-success" type="submit">Recover Password</button>
+            </form>
+        </div>
+        <div id="signup" class="tab-pane">
+            <form action="index.html" class="form-signin">
+                <p class="text-muted text-center btn-block btn btn-primary btn-rect">Please Fill Details To Register</p>
+                 <input type="text" placeholder="First Name" class="form-control" />
+                 <input type="text" placeholder="Last Name" class="form-control" />
+                <input type="text" placeholder="Username" class="form-control" />
+                <input type="email" placeholder="Your E-mail" class="form-control" />
+                <input type="password" placeholder="password" class="form-control" />
+                <input type="password" placeholder="Re type password" class="form-control" />
+                <button class="btn text-muted text-center btn-success" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <div class="text-center">
+        <ul class="list-inline">
+            <li><a class="text-muted" href="#login" data-toggle="tab">Login</a></li>
+            <li><a class="text-muted" href="#forgot" data-toggle="tab">Forgot Password</a></li>
+            <li><a class="text-muted" href="#signup" data-toggle="tab">Signup</a></li>
+        </ul>
+    </div>
+</div>
+      <!-- PAGE LEVEL SCRIPTS -->
+      <script src="<?php echo base_url('assets/adminTemplates/plugins/jquery-2.0.3.min.js')?>"></script>
+      <script src="<?php echo base_url('assets/adminTemplates/plugins/bootstrap/js/bootstrap.min.js')?>"></script>
+      <script src="<?php echo base_url('assets/adminTemplates/js/login.js')?>"></script>
+      <!--END PAGE LEVEL SCRIPTS -->
 
-    </body>
-
+</body>
+    <!-- END BODY -->
 </html>

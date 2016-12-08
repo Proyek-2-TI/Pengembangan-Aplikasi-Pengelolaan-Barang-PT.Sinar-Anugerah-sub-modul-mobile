@@ -34,7 +34,17 @@ class Barang_model extends CI_Model{
         return "br".$ID;
     }
 
-    public function insertBarang()
+    public function create($data)
+    {
+        try{
+            $this->db->insert('TBL_BARANG', $data);
+            return true;
+        }catch(Exception $e){
+            return $e;
+        }
+    }
+
+/*    public function insertBarang()
     {
         $id_barang    = $this->input->post('id_barang');
         $nm_barang    = $this->input->post('nm_barang');
@@ -54,7 +64,7 @@ class Barang_model extends CI_Model{
         );
 
         $this->db->insert('TBL_BARANG',$data);
-    }
+    }*/
 
     function getIdBarang($id){
         return $this->db->query("
