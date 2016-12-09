@@ -25,6 +25,9 @@ class Barang_Controller extends CI_Controller{
         $this->load->view('elements/v_header',$data);
         $this->load->view('pages/barang/v_barang');
         $this->load->view('elements/v_footer');
+
+        $this->session->unset_userdata('limit_add_cart');
+        $this->cart->destroy();
     }
 
     function tambah_barang(){

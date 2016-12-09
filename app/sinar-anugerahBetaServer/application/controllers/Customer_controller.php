@@ -17,6 +17,9 @@ class Customer_Controller extends CI_Controller{
         $this->load->view('elements/v_header',$data);
         $this->load->view('pages/customer/v_customer');
         $this->load->view('elements/v_footer');
+
+        $this->session->unset_userdata('limit_add_cart');
+        $this->cart->destroy();
     }
 
 

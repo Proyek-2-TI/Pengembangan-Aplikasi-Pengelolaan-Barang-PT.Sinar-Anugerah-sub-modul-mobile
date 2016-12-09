@@ -10,6 +10,9 @@ class Login_Controller extends CI_Controller {
         );
         $this->load->view('elements/v_header',$data);
         $this->load->view('pages/v_login');
+
+        $this->session->unset_userdata('limit_add_cart');
+        $this->cart->destroy();
 	}
 
     function cek_login() {

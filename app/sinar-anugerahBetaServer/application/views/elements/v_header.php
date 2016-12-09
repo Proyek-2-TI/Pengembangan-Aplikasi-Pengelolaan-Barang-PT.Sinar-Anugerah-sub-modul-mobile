@@ -14,13 +14,22 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/adminTemplates/css/bootstrap-fileupload.min.css')?>" />
     <!-- PAGE FormValidation LEVEL STYLES -->
      <link rel="stylesheet" href="<?php echo base_url('assets/adminTemplates/plugins/validationengine/css/validationEngine.jquery.css')?>" />
-
+    <!-- Page Choosen Level Styles -->
     <link href="<?php echo base_url('assets/choosen/css/chosen.css')?>" rel="stylesheet"/>
     <style type="text/css">
         .chzn-container-single .chzn-search input{
             width: 100%;
         }
     </style>
+    <script type="text/javascript" src="<?php echo base_url('assets/choosen/js/jquery.js')?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/choosen/js/bootstrap.js')?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/choosen/js/chosen.jquery.js');?>"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.chzn-select').chosen();
+            $('.chzn-select-deselect').chosen({allow_single_deselect:true});
+        });
+    </script>
 
 </head>
 
