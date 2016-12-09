@@ -10,6 +10,10 @@ class Dashboard_Controller extends CI_Controller{
 
     function index(){
         $data=array(
+            'dashboard' => 'active' ,   'pegawai' => '' ,
+            'barang'    => '' ,         'supplier' => '' ,
+            'customer'  => '' ,         'penjualan' => '' ,
+
             'title'=>'Dahboard Admin',
             'headerPage'=>'Dashboard',
             'headerPanel'=>'Kelola Data',

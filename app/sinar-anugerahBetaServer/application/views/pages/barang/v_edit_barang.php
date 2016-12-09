@@ -66,8 +66,8 @@
                                 <div class="col-lg-4">
                                     <select id="id_jenis_barang" name="id_jenis_barang" class="validate[required] form-control">
                                         <?php
-                                        if (isset($data_barang)){
-                                            foreach($data_barang as $row){
+                                        if (isset($data_jenis_barang)){
+                                            foreach($data_jenis_barang as $row){
                                         ?>
                                         <option value="<?php echo $row->ID_JENIS_BARANG?>"><?php echo $row->JENIS_BARANG?></option>
                                         <?php }

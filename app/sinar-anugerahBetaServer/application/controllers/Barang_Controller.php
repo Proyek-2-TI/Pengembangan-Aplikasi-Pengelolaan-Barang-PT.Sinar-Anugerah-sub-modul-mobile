@@ -12,6 +12,10 @@ class Barang_Controller extends CI_Controller{
     function index(){
 
         $data=array(
+            'dashboard' => '' , 'pegawai' => '' ,
+            'barang' => 'active' , 'supplier' => '' ,
+            'customer' => '' , 'penjualan' => '' ,
+
             'title'=>'Barang',
             'headerPage'=>'Data Barang',
             'headerPanel'=>'List Data Barang',
@@ -25,6 +29,10 @@ class Barang_Controller extends CI_Controller{
 
     function tambah_barang(){
         $data=array(
+            'dashboard' => '' , 'pegawai' => '' ,
+            'barang' => 'active' , 'supplier' => '' ,
+            'customer' => '' , 'penjualan' => '' ,
+
             'title'=>'Barang',
             'headerPage'=>'Data Barang',
             'headerPanel'=>'Tambah Data Barang',
@@ -86,6 +94,10 @@ class Barang_Controller extends CI_Controller{
     function edit_data_barang(){
         $id= $this->uri->segment(3);
         $data=array(
+            'dashboard' => '' , 'pegawai' => '' ,
+            'barang' => 'active' , 'supplier' => '' ,
+            'customer' => '' , 'penjualan' => '' ,
+
             'title'=>'Barang',
             'headerPage'=>'Data Barang',
             'headerPanel'=>'Edit Data Barang',
@@ -126,19 +138,6 @@ class Barang_Controller extends CI_Controller{
                 );
             $this->Global_model->updateData('TBL_BARANG', $products,$id);
             redirect("Barang_Controller");
-/*
-        $id['ID_BARANG'] = $this->input->post('id_barang');
-        $data=array(
-            'NM_BARANG'=>$this->input->post('nm_barang'),
-            'STOK_BARANG'=>$this->input->post('stok_barang'),
-            'HARGA_BARANG'=>$this->input->post('harga_barang'),
-            'RUSAK_BARANG'=>$this->input->post('rusak_barang'),
-            'ID_JENIS_BARANG'=>$this->input->post('id_jenis_barang'),
-            'ID_SUPPLIER'=>$this->input->post('id_supplier'),
-        );
-        $this->Global_model->updateData('TBL_BARANG',$data,$id);
-        redirect("Barang_Controller");
-*/
     }
 
     function hapus_barang(){

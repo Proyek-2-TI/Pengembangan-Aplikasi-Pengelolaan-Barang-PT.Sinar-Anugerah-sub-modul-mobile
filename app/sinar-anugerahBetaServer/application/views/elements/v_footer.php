@@ -6,7 +6,6 @@
     </div>
     <!--END FOOTER -->
 
-
      <!-- GLOBAL SCRIPTS -->
     <script src="<?php echo base_url('assets/adminTemplates/plugins/jquery-2.0.3.min.js')?>"></script>
     <script src="<?php echo base_url('assets/adminTemplates/plugins/bootstrap/js/bootstrap.min.js')?>"></script>
@@ -32,5 +31,19 @@
         $(function () { formValidation(); });
         </script>
      <!--END PAGE LEVEL SCRIPTS --></body>
+     <!-- END BODY -->
+
+    <!-- js choosen -->
+    <script type="text/javascript" src="<?php echo base_url('assets/choosen/js/jquery.js')?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/choosen/js/bootstrap.js')?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/choosen/js/chosen.jquery.js');?>"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.chzn-select').chosen();
+            $('.chzn-select-deselect').chosen({allow_single_deselect:true});
+        });
+    </script>
+
+     </body>
      <!-- END BODY -->
 </html>
