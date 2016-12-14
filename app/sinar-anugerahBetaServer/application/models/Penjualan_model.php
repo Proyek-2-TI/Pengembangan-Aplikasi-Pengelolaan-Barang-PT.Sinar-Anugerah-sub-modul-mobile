@@ -11,6 +11,16 @@ class Penjualan_model extends CI_Model{
         ")->result();
     }
 
+    function getDetailPenjualan($id){
+        return $this->db->query("
+            SELECT *
+            FROM ALDY.TBL_PENJUALAN_DETAIL 
+            INNER JOIN ALDY.TBL_BARANG ON TBL_PENJUALAN_DETAIL.ID_BARANG = TBL_BARANG.ID_BARANG
+            WHERE TBL_PENJUALAN_DETAIL.ID_PENJUALAN = '$id'
+            ORDER BY TBL_PENJUALAN_DETAIL.ID_BARANG ASC
+        ")->result();
+    }
+
     public function getKodePenjualan()
     {
         $q = $this->db->query("select MAX(SUBSTR(ID_PENJUALAN,-3,3)) as ID_MAX from TBL_PENJUALAN");

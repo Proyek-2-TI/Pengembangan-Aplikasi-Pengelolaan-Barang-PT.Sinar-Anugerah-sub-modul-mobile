@@ -51,8 +51,6 @@ class Barang_Controller extends CI_Controller{
 
     function proses_tambah_barang(){
         $this->load->helper(array('form','file','url'));
-        $this->load->library('form_validation');
-        $this->form_validation->set_rules('companyname','CompanyName','trim|required');
 
         $config_image = array();
         $config_image['upload_path']    = './uploads';
@@ -64,7 +62,6 @@ class Barang_Controller extends CI_Controller{
             $this->upload->do_upload();
             $data=array('upload_data' => $this->upload->data());
             
-            $this->image_resize($data['upload_data']['full_path'], $data['upload_data']['file_name']);
 
             $products = array(
                 'ID_BARANG' => $this->input->post('id_barang'),

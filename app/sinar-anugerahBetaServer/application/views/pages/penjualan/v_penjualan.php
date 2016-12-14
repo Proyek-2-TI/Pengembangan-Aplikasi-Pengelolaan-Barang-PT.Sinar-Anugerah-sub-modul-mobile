@@ -43,7 +43,7 @@
                                         <td><?php echo date("d M Y",strtotime($row->TGL_PENJUALAN)); ?></td>
                                         <td><?php echo currency_format($row->TOTAL_PENJUALAN);?></td>
                                         <td>
-                                            <a type="button" class="btn btn-outline btn-primary" href="<?php echo site_url('Barang_controller/edit_data_barang/'.$row->ID_PENJUALAN);?>"> 
+                                            <a type="button" class="btn btn-outline btn-primary" href="<?php echo site_url('Penjualan_controller/detail_penjualan/'.$row->ID_PENJUALAN);?>"> 
                                             <i class="fa fa-pencil fa-fw"></i> Detail</a>
                                             <a type="button" class="btn btn-outline btn-danger" href="<?php echo site_url('Barang_controller/hapus_barang/'.$row->ID_PENJUALAN);?>"
                                                onclick="return confirm('Anda yakin?')"> 

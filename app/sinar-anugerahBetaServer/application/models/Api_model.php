@@ -11,4 +11,12 @@ class Api_model extends CI_Model {
         return $result->result();
     }
 
+    function getAllData()
+    {
+        $result = $this->db->query("
+        	SELECT *
+            FROM TBL_CUSTOMER");
+        return $result->result();
+    }
+
 }

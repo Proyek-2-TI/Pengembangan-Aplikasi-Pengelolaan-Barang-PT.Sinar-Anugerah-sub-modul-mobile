@@ -33,6 +33,12 @@
         $(function () { formValidation(); });
     </script>
      <!--END PAGE LEVEL SCRIPTS -->
+    <script type="text/javascript" src="<?php echo base_url('assets/choosen/js/jquery.printPage.js')?>"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".btnPrint").printPage();
+        })
+    </script>
      </body>
      <!-- END BODY -->
 

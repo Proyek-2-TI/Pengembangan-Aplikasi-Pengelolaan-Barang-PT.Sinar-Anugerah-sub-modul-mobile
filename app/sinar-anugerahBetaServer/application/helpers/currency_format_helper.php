@@ -13,9 +13,4 @@ if ( ! function_exists('currency_format'))
         return 'Rp '.number_format($number,2,',','.');
 
     }
-
-
-
-
-
 }

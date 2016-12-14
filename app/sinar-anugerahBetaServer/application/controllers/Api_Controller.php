@@ -11,14 +11,19 @@ class Api_Controller extends CI_Controller {
 		header('Access-Control-Allow-Headers: Content-Type, x-xsrf-token');
 	}
 
+	public function getAllData(){
+        $result = $this->Api_model->getAllData();
+        echo json_encode($result, JSON_PRETTY_PRINT);
+	}
+
 /*
-	Target : http://localhost/proyek2/sinar-anugerahBetaServer/index.php/Api_Controller/
+http://localhost/proyek2/sinar-anugerahBetaServer/index.php/Api_Controller/login?username=alldie&password=alldie
 */	
 	public function login(){
         $username = $this->input->get('username');
         $password = $this->input->get('password');
         $result = $this->Api_model->login($username, $password);
-        echo json_encode($result);
+        echo json_encode($result, JSON_PRETTY_PRINT);
 	}
 
 }

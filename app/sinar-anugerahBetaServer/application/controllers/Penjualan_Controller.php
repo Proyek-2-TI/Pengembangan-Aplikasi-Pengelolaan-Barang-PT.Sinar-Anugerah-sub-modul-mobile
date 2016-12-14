@@ -100,4 +100,35 @@ class Penjualan_Controller extends CI_Controller{
         $this->cart->destroy();
         redirect('Penjualan_Controller');
     }
+
+    function detail_penjualan(){
+        $id= $this->uri->segment(3);
+        $data=array(
+            'dashboard' => '' , 'pegawai' => '' ,
+            'barang' => '' , 'supplier' => '' ,
+            'customer' => '' , 'penjualan' => 'active' ,
+
+            'title'=>'Detail Penjualan',
+            'headerPage'=>'Data Penjualan',
+            'headerPanel'=>'Data Penjualan',
+
+            'data_penjualan'=>$this->Penjualan_model->getAllDataPenjualan($id),
+            'detail_penjualan'=>$this->Penjualan_model->getDetailPenjualan($id),
+        );
+        $this->load->view('elements/v_header',$data);
+        $this->load->view('pages/penjualan/v_detail_penjualan');
+        $this->load->view('elements/v_footer');
+    }
+
+    function print_penjualan(){
+        $id=$this->uri->segment(3);
+        $data=array(
+            'title'=>'Penjualan',
+            'data_contact'=>$this->Global_model->getAllData('TBL_CONTACT'),
+            'data_penjualan'=>$this->Penjualan_model->getAllDataPenjualan($id),
+            'detail_penjualan'=>$this->Penjualan_model->getDetailPenjualan($id),
+        );
+        $this->load->view('pages/penjualan/v_print_penjualan',$data);
+    }
+
 }
