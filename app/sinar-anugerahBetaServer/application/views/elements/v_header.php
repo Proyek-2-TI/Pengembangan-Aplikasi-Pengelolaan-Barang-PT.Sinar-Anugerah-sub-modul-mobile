@@ -123,6 +123,16 @@
                         <i class="icon-signin"></i> Penjualan 
                     </a>
                 </li>
+                <li li class="panel <?php echo $penjualan ?>">
+                    <a href="<?php echo site_url('Barang_Masuk_Controller')?>">
+                        <i class="icon-signin"></i> Barang Masuk 
+                    </a>
+                </li>
+                <li li class="panel <?php echo $penjualan ?>">
+                    <a href="<?php echo site_url('Return_Customer_Controller')?>">
+                        <i class="icon-signin"></i> Return Customer 
+                    </a>
+                </li>
                 <li><a href="<?php echo site_url('Login_Controller/logout')?>">
                         <i class="icon-signin"></i> Logout 
                     </a>

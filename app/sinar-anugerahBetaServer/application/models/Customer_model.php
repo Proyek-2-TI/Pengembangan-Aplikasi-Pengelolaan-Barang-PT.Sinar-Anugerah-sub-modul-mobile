@@ -1,5 +1,4 @@
 <?php
-
 class Customer_model extends CI_Model{
     function __construct(){
         parent::__construct();
@@ -9,7 +8,6 @@ class Customer_model extends CI_Model{
 //                                              PELANGGAN                                                //
 //                                                                                                       //
 // ===================================================================================================== //
-
     public function getKodeCustomer(){
         $q = $this->db->query("select MAX(SUBSTR(ID_CUSTOMER,-3,3)) as ID_MAX from TBL_CUSTOMER");
         $ID = "";
@@ -23,11 +21,9 @@ class Customer_model extends CI_Model{
         }
         return "ct".$ID;
     }
-
     function getIdCustomer($id){
         return $this->db->query("SELECT * from TBL_CUSTOMER where ID_CUSTOMER = '$id'")->result();
     }
-
 //    public function insertCustomer($id_customer,$nm_customer,$almt_customer,$email_customer)
     public function insertCustomer()
     {
@@ -35,15 +31,12 @@ class Customer_model extends CI_Model{
         $nm_customer    = $this->input->post('nm_customer');
         $almt_customer  = $this->input->post('almt_customer');
         $email_customer = $this->input->post('email_customer');
-
         $data=array(
             'ID_CUSTOMER'=> $this->input->post('id_customer'),
             'NM_CUSTOMER'=>$this->input->post('nm_customer'),
             'ALMT_CUSTOMER'=>$this->input->post('almt_customer'),
             'EMAIL_CUSTOMER'=>$this->input->post('email_customer'),
         );
-
         $this->db->insert('TBL_CUSTOMER',$data);
     }
-
 }

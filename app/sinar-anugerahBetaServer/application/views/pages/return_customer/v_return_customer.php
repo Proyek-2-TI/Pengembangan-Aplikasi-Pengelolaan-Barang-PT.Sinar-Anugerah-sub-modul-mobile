@@ -21,12 +21,8 @@
                                         <th>Customer</th>
                                         <th>Pegawai</th>
                                         <th>Tanggal Penjualan</th>
-                                        <th>Total Harga</th>
-                                        <th>
-                                            <a href="<?php echo site_url('Penjualan_controller/tambah_penjualan')?>" " type="button" class="btn btn-primary">
-                                                Tambah
-                                            </a>
-                                        </th>
+                                        <th>Jumlah Return</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -41,13 +37,12 @@
                                         <td><?php echo $row->NM_CUSTOMER; ?></td>
                                         <td><?php echo $row->NM_PEGAWAI; ?></td>
                                         <td><?php echo date("d M Y",strtotime($row->TGL_PENJUALAN)); ?></td>
-                                        <td><?php echo currency_format($row->TOTAL_PENJUALAN);?></td>
+                                        <td><?php echo $row->JUMLAH; ?></td>
                                         <td>
-                                            <a type="button" class="btn btn-outline btn-primary" href="<?php echo site_url('Penjualan_controller/detail_penjualan/'.$row->ID_PENJUALAN);?>"> 
-                                            <i class="fa fa-pencil fa-fw"></i> Update</a>
-                                            <a type="button" class="btn btn-outline btn-danger" href="<?php echo site_url('Barang_controller/hapus_barang/'.$row->ID_PENJUALAN);?>"
-                                               onclick="return confirm('Anda yakin?')"> 
-                                            <i class="fa fa-trash-o fa-fw"></i> Hapus</a>
+                                            <a type="button" class="btn btn-outline btn-primary" href="<?php echo site_url('Return_Customer_Controller/detail_penjualan/'.$row->ID_PENJUALAN);?>"> 
+                                            <i class="fa fa-pencil fa-fw"></i> Detail</a>
+                                            <a type="button" class="btn btn-outline btn-info" href="<?php echo site_url('Return_Customer_Controller/pilihPenjualan/'.$row->ID_PENJUALAN);?>" >
+                                            <i class="fa fa-trash-o fa-fw"></i> Pilih</a>
                                         </td>
                                     </tr>
                                 <?php }
